@@ -19,7 +19,7 @@ public class Studente {
         } else if ((this.assenze<=50&&this.assenze>=25)&&this.mediaVoti>2) {
             promosso=true;
         } else
-            promosso=true;
+            promosso= mediaVoti>2;
         return promosso;
     }
 }
